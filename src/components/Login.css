@@ -1,0 +1,221 @@
+/* ===========================
+   GOOGLE FONT
+=========================== */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #f8f8f6;
+  text-transform: uppercase;
+}
+.login-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  /* gap: 6vw; */
+  align-items: center;
+  overflow: hidden;
+  padding: 0 10%;
+}
+/* LEFT */
+.left {
+  width: 35%;
+}
+.logo {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+}
+.left p {
+  margin-top: 40px;
+  letter-spacing: 6px;
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+/* RIGHT */
+.right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* MAIN PANEL */
+.shape {
+  width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.field {
+  width: 420px;
+}
+.field label {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+  color: #444;
+  font-weight: 700;
+}
+.field input {
+  width: 100%;
+  height: 64px;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  padding: 0 32px;
+  background: #f8f8f7;
+  font-size: 15px;
+  text-transform: none;
+  box-shadow:
+    inset 8px 8px 18px rgba(0, 0, 0, 0.05),
+    inset -8px -8px 18px rgba(255, 255, 255, 0.95),
+    6px 6px 14px rgba(0, 0, 0, 0.04);
+}
+.field input:focus {
+  box-shadow:
+    inset 8px 8px 16px rgba(0, 0, 0, 0.08),
+    inset -8px -8px 16px rgba(255, 255, 255, 0.95),
+    0 0 0 3px rgba(0, 0, 0, 0.03);
+}
+/* BUTTON */
+.login-btn {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  transition: 0.3s;
+}
+.circle:hover {
+  transform: scale(1.08);
+}
+.login-btn span {
+  letter-spacing: 5px;
+  font-size: 14px;
+  color: #222;
+  white-space: nowrap;
+}
+.right a {
+  margin-top: 30px;
+  text-decoration: none;
+  color: #444;
+  letter-spacing: 1.5px;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 1px solid #999;
+  padding-bottom: 3px;
+}
+/* Responsive */
+@media (max-width: 1200px) {
+  .shape {
+    width: 540px;
+  }
+  .field {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .login-page {
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 24px;
+  }
+  .left {
+    width: 100%;
+    text-align: center;
+  }
+  .logo {
+    justify-content: center;
+  }
+  .right {
+    width: 100%;
+  }
+  .shape {
+    width: 100%;
+    max-width: 420px;
+  }
+  .logo-img {
+    width: 100px;
+  }
+}
+@media (max-width: 600px) {
+  .login-page {
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+  }
+  .logo-img {
+    width: 60px;
+    padding-bottom: 10px;
+  }
+  .left{
+  padding-bottom: 80px;
+  }
+  .left p {
+    margin-top:12px;
+    font-size: 11px;
+    letter-spacing: 4px;
+  }
+  .shape {
+    max-width: 340px;
+    gap: 20px;
+    padding-bottom: 80px;
+  }
+  .field input {
+    height: 52px;
+    padding: 0 24px;
+    font-size: 13px;
+    border-radius: 36px;
+  }
+  .field label {
+    font-size: 10px;
+    letter-spacing: 2px;
+    margin-bottom: 6px;
+  }
+  .login-btn {
+    margin-top: 4px;
+    padding-bottom: 50px;
+  }
+  .circle {
+    width: 42px;
+    height: 42px;
+  }
+  .login-btn span {
+    font-size: 12px;
+  }
+  .right a {
+    margin-top: 18px;
+    font-size: 11px;
+  }
+}
+.logo-img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .logo-img {
+    width: 80px; 
+  }
+}
